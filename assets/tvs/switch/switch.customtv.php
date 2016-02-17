@@ -6,7 +6,7 @@ $cssUrls = array(
 		'version' => '1.0'
 	)
 );
-if (!function_exists("includeJsCss")) {
+if (function_exists("includeJsCss")) {
   echo includeJsCss($cssUrls['switch']['url'], $cssUrls['switch']['name'], $cssUrls['switch']['version']);
 } else {
   echo '<link rel="stylesheet" type="text/css" href="'.$cssUrls['switch']['url'].'" />';
