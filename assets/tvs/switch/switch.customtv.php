@@ -9,6 +9,7 @@ $css = $assets->registerScript('switch',
 );
 
 $checked = (empty($field_value)) ? "" : "checked='checked'";
+echo $css;
 ?>
 
 <label class="switch switch-small">
